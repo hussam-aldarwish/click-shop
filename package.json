@@ -9,11 +9,15 @@
     "lint": "run-s lint:*",
     "lint-fix:prettier": "prettier --write .",
     "lint-fix": "run-s lint-fix:*",
-    "dev": "next dev",
+    "dev:client": "next dev --turbopack",
+    "dev:server": "json-server db.json --port 5000",
+    "dev": "run-p dev:*",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "start:server": "json-server db.json"
   },
   "dependencies": {
+    "json-server": "1.0.0-beta.3",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
