@@ -1,0 +1,21 @@
+{
+  "name": "Click Shop",
+  "short_name": "Click Shop",
+  "start_url": "/",
+  "description": "E-commerce platform for all your shopping needs",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#3490dc",
+  "theme_colors": [
+    { "color": "#3490dc" },
+    { "color": "#63b3ed", "media": "(prefers-color-scheme: dark)" }
+  ],
+  "background_color": "#f9f9f9",
+  "background_colors": [
+    { "color": "#f9f9f9" },
+    { "color": "#1a202c", "media": "(prefers-color-scheme: dark)" }
+  ],
+  "display": "standalone"
+}
