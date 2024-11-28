@@ -2,32 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/* My custom css variables */
 :root {
-  --color-background: #f9f9f9;
-  --color-foreground: #333;
-  --color-primary: #3490dc;
-  --color-secondary: #6574cd;
-  --color-accent: #38c172;
-  --color-neutral: #f8fafc;
-  --color-borders: #9ca3af;
+  --color-background: #f9fafb;
+  --color-foreground: #1e293b;
+  --color-primary: #1d4ed8;
+  --color-secondary: #0ea5e9;
+  --color-accent: #14b8a6;
+  --color-neutral: #e5e7eb;
+  --color-borders: #cbd5e1;
+  --color-light: #ffffff;
+  --color-dark: #111827;
 }
 
 :root.dark {
-  --color-background: #1a202c;
-  --color-foreground: #f9f9f9;
-  --color-primary: #63b3ed;
-  --color-secondary: #a3bffa;
-  --color-accent: #51d88a;
-  --color-neutral: #2d3748;
-  --color-borders: #4a5568;
+  --color-background: #1e293b;
+  --color-foreground: #f9fafb;
+  --color-primary: #60a5fa;
+  --color-secondary: #38bdf8;
+  --color-accent: #5eead4;
+  --color-neutral: #334155;
+  --color-borders: #475569;
+  --color-light: #f9fafb;
+  --color-dark: #0f172a;
+}
+
+* {
+  border-color: var(--color-borders);
+}
+
+body {
+  @apply bg-background font-roboto text-base leading-7 text-foreground antialiased;
+  @apply flex min-h-screen flex-col;
+  main {
+    @apply relative flex-1;
+  }
 }
 
 @layer base {
-  body {
-    @apply bg-background font-roboto text-base leading-7 text-foreground antialiased;
-  }
-
   h1,
   h2,
   h3,
@@ -62,5 +73,16 @@
   h5,
   h6 {
     @apply font-semibold;
+  }
+}
+
+@layer utilities {
+  .bg-primary,
+  .bg-secondary {
+    @apply text-light;
+  }
+
+  .bg-secondary {
+    @apply dark:text-dark;
   }
 }

@@ -6,12 +6,10 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <main>
-      <div className='container space-y-4 text-center'>
-        <h1 className='mt-4'>Welcome to Click Shop</h1>
-        <p>Click Shop is an e-commerce platform for all your shopping needs.</p>
-      </div>
-    </main>
+    <div className='container space-y-4 text-center'>
+      <h1 className='mt-4'>Welcome to Click Shop</h1>
+      <p>Click Shop is an e-commerce platform for all your shopping needs.</p>
+    </div>
   );
 };
 

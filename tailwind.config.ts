@@ -16,6 +16,8 @@ export default {
         secondary: 'var(--color-secondary)',
         accent: 'var(--color-accent)',
         neutral: 'var(--color-neutral)',
+        light: 'var(--color-light)',
+        dark: 'var(--color-dark)',
       },
       fontFamily: {
         poppins: 'var(--font-poppins)',

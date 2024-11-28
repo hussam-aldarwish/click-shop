@@ -1,0 +1,19 @@
+{
+  "main-nav-menu": [
+    {
+      "label": "Home",
+      "href": "/",
+      "exact": true
+    }
+  ],
+  "footer-nav-menu": [
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "/terms"
+    }
+  ]
+}
