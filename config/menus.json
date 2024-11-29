@@ -4,6 +4,10 @@
       "label": "Home",
       "href": "/",
       "exact": true
+    },
+    {
+      "label": "Products",
+      "href": "/products"
     }
   ],
   "footer-nav-menu": [

@@ -1,13 +1,1254 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "Echo Wireless Speaker",
+      "description": "Built with premium materials, it offers unmatched quality and long-lasting performance.",
+      "image": "https://picsum.photos/seed/click-shop-1/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 1",
+          "description": "This is image 1 for Product 1.",
+          "url": "https://picsum.photos/seed/click-shop-1-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 1",
+          "description": "This is image 2 for Product 1.",
+          "url": "https://picsum.photos/seed/click-shop-1-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 1",
+          "description": "This is image 3 for Product 1.",
+          "url": "https://picsum.photos/seed/click-shop-1-img-3/500/500"
+        }
+      ],
+      "price": 330.94,
+      "tags": ["user-friendly", "smart", "ergonomic", "versatile"]
+    },
+    {
+      "id": 2,
+      "name": "Spectrum Headphones",
+      "description": "Experience the perfect blend of style and practicality with this state-of-the-art item.",
+      "image": "https://picsum.photos/seed/click-shop-2/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 2",
+          "description": "This is image 1 for Product 2.",
+          "url": "https://picsum.photos/seed/click-shop-2-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 2",
+          "description": "This is image 2 for Product 2.",
+          "url": "https://picsum.photos/seed/click-shop-2-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 2",
+          "description": "This is image 3 for Product 2.",
+          "url": "https://picsum.photos/seed/click-shop-2-img-3/500/500"
+        }
+      ],
+      "price": 416.2,
+      "tags": ["affordable", "compact", "smart"]
+    },
+    {
+      "id": 3,
+      "name": "Solstice Sunglasses",
+      "description": "Stay ahead with this innovative product, offering cutting-edge features and usability.",
+      "image": "https://picsum.photos/seed/click-shop-3/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 3",
+          "description": "This is image 1 for Product 3.",
+          "url": "https://picsum.photos/seed/click-shop-3-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 3",
+          "description": "This is image 2 for Product 3.",
+          "url": "https://picsum.photos/seed/click-shop-3-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 3",
+          "description": "This is image 3 for Product 3.",
+          "url": "https://picsum.photos/seed/click-shop-3-img-3/500/500"
+        }
+      ],
+      "price": 406.42,
+      "tags": ["durable", "lightweight", "luxury"]
+    },
+    {
+      "id": 4,
+      "name": "Prism Keychain Light",
+      "description": "Engineered for efficiency and durability, this product is your ideal companion.",
+      "image": "https://picsum.photos/seed/click-shop-4/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 4",
+          "description": "This is image 1 for Product 4.",
+          "url": "https://picsum.photos/seed/click-shop-4-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 4",
+          "description": "This is image 2 for Product 4.",
+          "url": "https://picsum.photos/seed/click-shop-4-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 4",
+          "description": "This is image 3 for Product 4.",
+          "url": "https://picsum.photos/seed/click-shop-4-img-3/500/500"
+        }
+      ],
+      "price": 232.18,
+      "tags": ["luxury", "versatile", "lightweight", "minimalist"]
+    },
+    {
+      "id": 5,
+      "name": "Spectrum Headphones",
+      "description": "A must-have for modern living, combining advanced technology with sleek design.",
+      "image": "https://picsum.photos/seed/click-shop-5/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 5",
+          "description": "This is image 1 for Product 5.",
+          "url": "https://picsum.photos/seed/click-shop-5-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 5",
+          "description": "This is image 2 for Product 5.",
+          "url": "https://picsum.photos/seed/click-shop-5-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 5",
+          "description": "This is image 3 for Product 5.",
+          "url": "https://picsum.photos/seed/click-shop-5-img-3/500/500"
+        }
+      ],
+      "price": 121.13,
+      "tags": ["eco-friendly", "premium", "energy-efficient", "versatile", "waterproof"]
+    },
+    {
+      "id": 6,
+      "name": "Aspire Journal",
+      "description": "Crafted with precision, this product guarantees exceptional performance and reliability.",
+      "image": "https://picsum.photos/seed/click-shop-6/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 6",
+          "description": "This is image 1 for Product 6.",
+          "url": "https://picsum.photos/seed/click-shop-6-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 6",
+          "description": "This is image 2 for Product 6.",
+          "url": "https://picsum.photos/seed/click-shop-6-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 6",
+          "description": "This is image 3 for Product 6.",
+          "url": "https://picsum.photos/seed/click-shop-6-img-3/500/500"
+        }
+      ],
+      "price": 425.55,
+      "tags": ["ergonomic", "modern", "rechargeable"]
+    },
+    {
+      "id": 7,
+      "name": "Solstice Sunglasses",
+      "description": "A versatile and stylish product tailored to suit a wide range of needs and preferences.",
+      "image": "https://picsum.photos/seed/click-shop-7/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 7",
+          "description": "This is image 1 for Product 7.",
+          "url": "https://picsum.photos/seed/click-shop-7-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 7",
+          "description": "This is image 2 for Product 7.",
+          "url": "https://picsum.photos/seed/click-shop-7-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 7",
+          "description": "This is image 3 for Product 7.",
+          "url": "https://picsum.photos/seed/click-shop-7-img-3/500/500"
+        }
+      ],
+      "price": 347.69,
+      "tags": ["luxury", "innovative", "sleek"]
+    },
+    {
+      "id": 8,
+      "name": "Aspire Journal",
+      "description": "Stay ahead with this innovative product, offering cutting-edge features and usability.",
+      "image": "https://picsum.photos/seed/click-shop-8/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 8",
+          "description": "This is image 1 for Product 8.",
+          "url": "https://picsum.photos/seed/click-shop-8-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 8",
+          "description": "This is image 2 for Product 8.",
+          "url": "https://picsum.photos/seed/click-shop-8-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 8",
+          "description": "This is image 3 for Product 8.",
+          "url": "https://picsum.photos/seed/click-shop-8-img-3/500/500"
+        }
+      ],
+      "price": 407.33,
+      "tags": ["luxury", "affordable", "durable", "portable", "compact"]
+    },
+    {
+      "id": 9,
+      "name": "Nimbus Umbrella",
+      "description": "A versatile and stylish product tailored to suit a wide range of needs and preferences.",
+      "image": "https://picsum.photos/seed/click-shop-9/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 9",
+          "description": "This is image 1 for Product 9.",
+          "url": "https://picsum.photos/seed/click-shop-9-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 9",
+          "description": "This is image 2 for Product 9.",
+          "url": "https://picsum.photos/seed/click-shop-9-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 9",
+          "description": "This is image 3 for Product 9.",
+          "url": "https://picsum.photos/seed/click-shop-9-img-3/500/500"
+        }
+      ],
+      "price": 253.11,
+      "tags": ["energy-efficient", "innovative", "rechargeable"]
+    },
+    {
+      "id": 10,
+      "name": "Nova Desk Organizer",
+      "description": "Perfect for adventurers and everyday users, this product stands the test of time.",
+      "image": "https://picsum.photos/seed/click-shop-10/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 10",
+          "description": "This is image 1 for Product 10.",
+          "url": "https://picsum.photos/seed/click-shop-10-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 10",
+          "description": "This is image 2 for Product 10.",
+          "url": "https://picsum.photos/seed/click-shop-10-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 10",
+          "description": "This is image 3 for Product 10.",
+          "url": "https://picsum.photos/seed/click-shop-10-img-3/500/500"
+        }
+      ],
+      "price": 88.94,
+      "tags": ["waterproof", "affordable"]
+    },
+    {
+      "id": 11,
+      "name": "Eclipse Projector",
+      "description": "An innovative product designed to bring both functionality and elegance to your daily life.",
+      "image": "https://picsum.photos/seed/click-shop-11/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 11",
+          "description": "This is image 1 for Product 11.",
+          "url": "https://picsum.photos/seed/click-shop-11-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 11",
+          "description": "This is image 2 for Product 11.",
+          "url": "https://picsum.photos/seed/click-shop-11-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 11",
+          "description": "This is image 3 for Product 11.",
+          "url": "https://picsum.photos/seed/click-shop-11-img-3/500/500"
+        }
+      ],
+      "price": 420.85,
+      "tags": ["innovative", "modern", "ergonomic"]
+    },
+    {
+      "id": 12,
+      "name": "Nimbus Umbrella",
+      "description": "Designed to simplify your life while adding a touch of sophistication to your space.",
+      "image": "https://picsum.photos/seed/click-shop-12/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 12",
+          "description": "This is image 1 for Product 12.",
+          "url": "https://picsum.photos/seed/click-shop-12-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 12",
+          "description": "This is image 2 for Product 12.",
+          "url": "https://picsum.photos/seed/click-shop-12-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 12",
+          "description": "This is image 3 for Product 12.",
+          "url": "https://picsum.photos/seed/click-shop-12-img-3/500/500"
+        }
+      ],
+      "price": 85.25,
+      "tags": ["portable", "versatile"]
+    },
+    {
+      "id": 13,
+      "name": "Stellar Wall Clock",
+      "description": "Built with premium materials, it offers unmatched quality and long-lasting performance.",
+      "image": "https://picsum.photos/seed/click-shop-13/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 13",
+          "description": "This is image 1 for Product 13.",
+          "url": "https://picsum.photos/seed/click-shop-13-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 13",
+          "description": "This is image 2 for Product 13.",
+          "url": "https://picsum.photos/seed/click-shop-13-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 13",
+          "description": "This is image 3 for Product 13.",
+          "url": "https://picsum.photos/seed/click-shop-13-img-3/500/500"
+        }
+      ],
+      "price": 122.7,
+      "tags": ["rechargeable", "user-friendly"]
+    },
+    {
+      "id": 14,
+      "name": "Aurora Lamp",
+      "description": "Perfect for adventurers and everyday users, this product stands the test of time.",
+      "image": "https://picsum.photos/seed/click-shop-14/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 14",
+          "description": "This is image 1 for Product 14.",
+          "url": "https://picsum.photos/seed/click-shop-14-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 14",
+          "description": "This is image 2 for Product 14.",
+          "url": "https://picsum.photos/seed/click-shop-14-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 14",
+          "description": "This is image 3 for Product 14.",
+          "url": "https://picsum.photos/seed/click-shop-14-img-3/500/500"
+        }
+      ],
+      "price": 154.48,
+      "tags": ["durable", "user-friendly", "minimalist", "premium"]
+    },
+    {
+      "id": 15,
+      "name": "Stellar Wall Clock",
+      "description": "Crafted with precision, this product guarantees exceptional performance and reliability.",
+      "image": "https://picsum.photos/seed/click-shop-15/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 15",
+          "description": "This is image 1 for Product 15.",
+          "url": "https://picsum.photos/seed/click-shop-15-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 15",
+          "description": "This is image 2 for Product 15.",
+          "url": "https://picsum.photos/seed/click-shop-15-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 15",
+          "description": "This is image 3 for Product 15.",
+          "url": "https://picsum.photos/seed/click-shop-15-img-3/500/500"
+        }
+      ],
+      "price": 17.96,
+      "tags": ["innovative", "waterproof", "lightweight"]
+    },
+    {
+      "id": 16,
+      "name": "Prism Keychain Light",
+      "description": "Designed to simplify your life while adding a touch of sophistication to your space.",
+      "image": "https://picsum.photos/seed/click-shop-16/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 16",
+          "description": "This is image 1 for Product 16.",
+          "url": "https://picsum.photos/seed/click-shop-16-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 16",
+          "description": "This is image 2 for Product 16.",
+          "url": "https://picsum.photos/seed/click-shop-16-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 16",
+          "description": "This is image 3 for Product 16.",
+          "url": "https://picsum.photos/seed/click-shop-16-img-3/500/500"
+        }
+      ],
+      "price": 56.6,
+      "tags": ["luxury", "versatile", "minimalist", "sleek"]
+    },
+    {
+      "id": 17,
+      "name": "Lunar Watch",
+      "description": "A versatile and stylish product tailored to suit a wide range of needs and preferences.",
+      "image": "https://picsum.photos/seed/click-shop-17/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 17",
+          "description": "This is image 1 for Product 17.",
+          "url": "https://picsum.photos/seed/click-shop-17-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 17",
+          "description": "This is image 2 for Product 17.",
+          "url": "https://picsum.photos/seed/click-shop-17-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 17",
+          "description": "This is image 3 for Product 17.",
+          "url": "https://picsum.photos/seed/click-shop-17-img-3/500/500"
+        }
+      ],
+      "price": 315.47,
+      "tags": ["smart", "portable", "user-friendly", "sleek", "durable"]
+    },
+    {
+      "id": 18,
+      "name": "Lunar Watch",
+      "description": "Stay ahead with this innovative product, offering cutting-edge features and usability.",
+      "image": "https://picsum.photos/seed/click-shop-18/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 18",
+          "description": "This is image 1 for Product 18.",
+          "url": "https://picsum.photos/seed/click-shop-18-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 18",
+          "description": "This is image 2 for Product 18.",
+          "url": "https://picsum.photos/seed/click-shop-18-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 18",
+          "description": "This is image 3 for Product 18.",
+          "url": "https://picsum.photos/seed/click-shop-18-img-3/500/500"
+        }
+      ],
+      "price": 476.07,
+      "tags": ["waterproof", "affordable", "modern", "premium", "versatile"]
+    },
+    {
+      "id": 19,
+      "name": "Aurora Lamp",
+      "description": "Perfect for adventurers and everyday users, this product stands the test of time.",
+      "image": "https://picsum.photos/seed/click-shop-19/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 19",
+          "description": "This is image 1 for Product 19.",
+          "url": "https://picsum.photos/seed/click-shop-19-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 19",
+          "description": "This is image 2 for Product 19.",
+          "url": "https://picsum.photos/seed/click-shop-19-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 19",
+          "description": "This is image 3 for Product 19.",
+          "url": "https://picsum.photos/seed/click-shop-19-img-3/500/500"
+        }
+      ],
+      "price": 153.39,
+      "tags": ["rechargeable", "luxury"]
+    },
+    {
+      "id": 20,
+      "name": "Nova Desk Organizer",
+      "description": "Designed to simplify your life while adding a touch of sophistication to your space.",
+      "image": "https://picsum.photos/seed/click-shop-20/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 20",
+          "description": "This is image 1 for Product 20.",
+          "url": "https://picsum.photos/seed/click-shop-20-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 20",
+          "description": "This is image 2 for Product 20.",
+          "url": "https://picsum.photos/seed/click-shop-20-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 20",
+          "description": "This is image 3 for Product 20.",
+          "url": "https://picsum.photos/seed/click-shop-20-img-3/500/500"
+        }
+      ],
+      "price": 260.44,
+      "tags": ["energy-efficient", "sleek"]
+    },
+    {
+      "id": 21,
+      "name": "Nova Desk Organizer",
+      "description": "Stay ahead with this innovative product, offering cutting-edge features and usability.",
+      "image": "https://picsum.photos/seed/click-shop-21/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 21",
+          "description": "This is image 1 for Product 21.",
+          "url": "https://picsum.photos/seed/click-shop-21-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 21",
+          "description": "This is image 2 for Product 21.",
+          "url": "https://picsum.photos/seed/click-shop-21-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 21",
+          "description": "This is image 3 for Product 21.",
+          "url": "https://picsum.photos/seed/click-shop-21-img-3/500/500"
+        }
+      ],
+      "price": 402.59,
+      "tags": ["modern", "minimalist", "stylish"]
+    },
+    {
+      "id": 22,
+      "name": "Vertex Backpack",
+      "description": "Crafted with precision, this product guarantees exceptional performance and reliability.",
+      "image": "https://picsum.photos/seed/click-shop-22/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 22",
+          "description": "This is image 1 for Product 22.",
+          "url": "https://picsum.photos/seed/click-shop-22-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 22",
+          "description": "This is image 2 for Product 22.",
+          "url": "https://picsum.photos/seed/click-shop-22-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 22",
+          "description": "This is image 3 for Product 22.",
+          "url": "https://picsum.photos/seed/click-shop-22-img-3/500/500"
+        }
+      ],
+      "price": 210.48,
+      "tags": ["affordable", "sleek", "energy-efficient"]
+    },
+    {
+      "id": 23,
+      "name": "Orbit Gaming Mouse",
+      "description": "A versatile and stylish product tailored to suit a wide range of needs and preferences.",
+      "image": "https://picsum.photos/seed/click-shop-23/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 23",
+          "description": "This is image 1 for Product 23.",
+          "url": "https://picsum.photos/seed/click-shop-23-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 23",
+          "description": "This is image 2 for Product 23.",
+          "url": "https://picsum.photos/seed/click-shop-23-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 23",
+          "description": "This is image 3 for Product 23.",
+          "url": "https://picsum.photos/seed/click-shop-23-img-3/500/500"
+        }
+      ],
+      "price": 119.98,
+      "tags": ["rechargeable", "minimalist", "ergonomic", "versatile", "innovative"]
+    },
+    {
+      "id": 24,
+      "name": "Glacier Cooler",
+      "description": "Engineered for efficiency and durability, this product is your ideal companion.",
+      "image": "https://picsum.photos/seed/click-shop-24/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 24",
+          "description": "This is image 1 for Product 24.",
+          "url": "https://picsum.photos/seed/click-shop-24-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 24",
+          "description": "This is image 2 for Product 24.",
+          "url": "https://picsum.photos/seed/click-shop-24-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 24",
+          "description": "This is image 3 for Product 24.",
+          "url": "https://picsum.photos/seed/click-shop-24-img-3/500/500"
+        }
+      ],
+      "price": 183.34,
+      "tags": ["durable", "luxury"]
+    },
+    {
+      "id": 25,
+      "name": "Stellar Wall Clock",
+      "description": "A versatile and stylish product tailored to suit a wide range of needs and preferences.",
+      "image": "https://picsum.photos/seed/click-shop-25/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 25",
+          "description": "This is image 1 for Product 25.",
+          "url": "https://picsum.photos/seed/click-shop-25-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 25",
+          "description": "This is image 2 for Product 25.",
+          "url": "https://picsum.photos/seed/click-shop-25-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 25",
+          "description": "This is image 3 for Product 25.",
+          "url": "https://picsum.photos/seed/click-shop-25-img-3/500/500"
+        }
+      ],
+      "price": 300.4,
+      "tags": ["user-friendly", "waterproof", "sleek"]
+    },
+    {
+      "id": 26,
+      "name": "Lunar Watch",
+      "description": "Engineered for efficiency and durability, this product is your ideal companion.",
+      "image": "https://picsum.photos/seed/click-shop-26/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 26",
+          "description": "This is image 1 for Product 26.",
+          "url": "https://picsum.photos/seed/click-shop-26-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 26",
+          "description": "This is image 2 for Product 26.",
+          "url": "https://picsum.photos/seed/click-shop-26-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 26",
+          "description": "This is image 3 for Product 26.",
+          "url": "https://picsum.photos/seed/click-shop-26-img-3/500/500"
+        }
+      ],
+      "price": 409.64,
+      "tags": ["luxury", "modern"]
+    },
+    {
+      "id": 27,
+      "name": "Nimbus Umbrella",
+      "description": "Experience the perfect blend of style and practicality with this state-of-the-art item.",
+      "image": "https://picsum.photos/seed/click-shop-27/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 27",
+          "description": "This is image 1 for Product 27.",
+          "url": "https://picsum.photos/seed/click-shop-27-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 27",
+          "description": "This is image 2 for Product 27.",
+          "url": "https://picsum.photos/seed/click-shop-27-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 27",
+          "description": "This is image 3 for Product 27.",
+          "url": "https://picsum.photos/seed/click-shop-27-img-3/500/500"
+        }
+      ],
+      "price": 124.34,
+      "tags": ["portable", "user-friendly", "smart", "affordable"]
+    },
+    {
+      "id": 28,
+      "name": "Blaze Portable Charger",
+      "description": "Experience the perfect blend of style and practicality with this state-of-the-art item.",
+      "image": "https://picsum.photos/seed/click-shop-28/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 28",
+          "description": "This is image 1 for Product 28.",
+          "url": "https://picsum.photos/seed/click-shop-28-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 28",
+          "description": "This is image 2 for Product 28.",
+          "url": "https://picsum.photos/seed/click-shop-28-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 28",
+          "description": "This is image 3 for Product 28.",
+          "url": "https://picsum.photos/seed/click-shop-28-img-3/500/500"
+        }
+      ],
+      "price": 334.8,
+      "tags": ["waterproof", "compact", "user-friendly", "affordable"]
+    },
+    {
+      "id": 29,
+      "name": "Solstice Sunglasses",
+      "description": "Engineered for efficiency and durability, this product is your ideal companion.",
+      "image": "https://picsum.photos/seed/click-shop-29/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 29",
+          "description": "This is image 1 for Product 29.",
+          "url": "https://picsum.photos/seed/click-shop-29-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 29",
+          "description": "This is image 2 for Product 29.",
+          "url": "https://picsum.photos/seed/click-shop-29-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 29",
+          "description": "This is image 3 for Product 29.",
+          "url": "https://picsum.photos/seed/click-shop-29-img-3/500/500"
+        }
+      ],
+      "price": 310.75,
+      "tags": ["luxury", "minimalist", "portable", "smart", "affordable"]
+    },
+    {
+      "id": 30,
+      "name": "Glacier Cooler",
+      "description": "Built with premium materials, it offers unmatched quality and long-lasting performance.",
+      "image": "https://picsum.photos/seed/click-shop-30/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 30",
+          "description": "This is image 1 for Product 30.",
+          "url": "https://picsum.photos/seed/click-shop-30-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 30",
+          "description": "This is image 2 for Product 30.",
+          "url": "https://picsum.photos/seed/click-shop-30-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 30",
+          "description": "This is image 3 for Product 30.",
+          "url": "https://picsum.photos/seed/click-shop-30-img-3/500/500"
+        }
+      ],
+      "price": 465.0,
+      "tags": ["luxury", "portable", "modern", "lightweight", "stylish"]
+    },
+    {
+      "id": 31,
+      "name": "Galaxy Yoga Mat",
+      "description": "Engineered for efficiency and durability, this product is your ideal companion.",
+      "image": "https://picsum.photos/seed/click-shop-31/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 31",
+          "description": "This is image 1 for Product 31.",
+          "url": "https://picsum.photos/seed/click-shop-31-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 31",
+          "description": "This is image 2 for Product 31.",
+          "url": "https://picsum.photos/seed/click-shop-31-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 31",
+          "description": "This is image 3 for Product 31.",
+          "url": "https://picsum.photos/seed/click-shop-31-img-3/500/500"
+        }
+      ],
+      "price": 113.29,
+      "tags": ["minimalist", "luxury"]
+    },
+    {
+      "id": 32,
+      "name": "Glacier Cooler",
+      "description": "Built with premium materials, it offers unmatched quality and long-lasting performance.",
+      "image": "https://picsum.photos/seed/click-shop-32/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 32",
+          "description": "This is image 1 for Product 32.",
+          "url": "https://picsum.photos/seed/click-shop-32-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 32",
+          "description": "This is image 2 for Product 32.",
+          "url": "https://picsum.photos/seed/click-shop-32-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 32",
+          "description": "This is image 3 for Product 32.",
+          "url": "https://picsum.photos/seed/click-shop-32-img-3/500/500"
+        }
+      ],
+      "price": 465.19,
+      "tags": ["modern", "portable"]
+    },
+    {
+      "id": 33,
+      "name": "Aurora Lamp",
+      "description": "Designed to simplify your life while adding a touch of sophistication to your space.",
+      "image": "https://picsum.photos/seed/click-shop-33/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 33",
+          "description": "This is image 1 for Product 33.",
+          "url": "https://picsum.photos/seed/click-shop-33-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 33",
+          "description": "This is image 2 for Product 33.",
+          "url": "https://picsum.photos/seed/click-shop-33-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 33",
+          "description": "This is image 3 for Product 33.",
+          "url": "https://picsum.photos/seed/click-shop-33-img-3/500/500"
+        }
+      ],
+      "price": 54.4,
+      "tags": ["premium", "minimalist", "durable", "stylish", "compact"]
+    },
+    {
+      "id": 34,
+      "name": "Spectrum Headphones",
+      "description": "Crafted with precision, this product guarantees exceptional performance and reliability.",
+      "image": "https://picsum.photos/seed/click-shop-34/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 34",
+          "description": "This is image 1 for Product 34.",
+          "url": "https://picsum.photos/seed/click-shop-34-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 34",
+          "description": "This is image 2 for Product 34.",
+          "url": "https://picsum.photos/seed/click-shop-34-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 34",
+          "description": "This is image 3 for Product 34.",
+          "url": "https://picsum.photos/seed/click-shop-34-img-3/500/500"
+        }
+      ],
+      "price": 394.1,
+      "tags": ["user-friendly", "premium", "luxury", "rechargeable"]
+    },
+    {
+      "id": 35,
+      "name": "Lunar Watch",
+      "description": "Crafted with precision, this product guarantees exceptional performance and reliability.",
+      "image": "https://picsum.photos/seed/click-shop-35/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 35",
+          "description": "This is image 1 for Product 35.",
+          "url": "https://picsum.photos/seed/click-shop-35-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 35",
+          "description": "This is image 2 for Product 35.",
+          "url": "https://picsum.photos/seed/click-shop-35-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 35",
+          "description": "This is image 3 for Product 35.",
+          "url": "https://picsum.photos/seed/click-shop-35-img-3/500/500"
+        }
+      ],
+      "price": 253.35,
+      "tags": ["innovative", "premium", "eco-friendly", "durable", "minimalist"]
+    },
+    {
+      "id": 36,
+      "name": "Aspire Journal",
+      "description": "An innovative product designed to bring both functionality and elegance to your daily life.",
+      "image": "https://picsum.photos/seed/click-shop-36/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 36",
+          "description": "This is image 1 for Product 36.",
+          "url": "https://picsum.photos/seed/click-shop-36-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 36",
+          "description": "This is image 2 for Product 36.",
+          "url": "https://picsum.photos/seed/click-shop-36-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 36",
+          "description": "This is image 3 for Product 36.",
+          "url": "https://picsum.photos/seed/click-shop-36-img-3/500/500"
+        }
+      ],
+      "price": 81.56,
+      "tags": ["sleek", "smart", "eco-friendly"]
+    },
+    {
+      "id": 37,
+      "name": "Vertex Backpack",
+      "description": "Stay ahead with this innovative product, offering cutting-edge features and usability.",
+      "image": "https://picsum.photos/seed/click-shop-37/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 37",
+          "description": "This is image 1 for Product 37.",
+          "url": "https://picsum.photos/seed/click-shop-37-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 37",
+          "description": "This is image 2 for Product 37.",
+          "url": "https://picsum.photos/seed/click-shop-37-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 37",
+          "description": "This is image 3 for Product 37.",
+          "url": "https://picsum.photos/seed/click-shop-37-img-3/500/500"
+        }
+      ],
+      "price": 95.25,
+      "tags": ["durable", "waterproof", "smart", "energy-efficient"]
+    },
+    {
+      "id": 38,
+      "name": "Stellar Wall Clock",
+      "description": "Designed to simplify your life while adding a touch of sophistication to your space.",
+      "image": "https://picsum.photos/seed/click-shop-38/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 38",
+          "description": "This is image 1 for Product 38.",
+          "url": "https://picsum.photos/seed/click-shop-38-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 38",
+          "description": "This is image 2 for Product 38.",
+          "url": "https://picsum.photos/seed/click-shop-38-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 38",
+          "description": "This is image 3 for Product 38.",
+          "url": "https://picsum.photos/seed/click-shop-38-img-3/500/500"
+        }
+      ],
+      "price": 97.71,
+      "tags": ["modern", "luxury", "affordable", "ergonomic"]
+    },
+    {
+      "id": 39,
+      "name": "Eclipse Projector",
+      "description": "A must-have for modern living, combining advanced technology with sleek design.",
+      "image": "https://picsum.photos/seed/click-shop-39/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 39",
+          "description": "This is image 1 for Product 39.",
+          "url": "https://picsum.photos/seed/click-shop-39-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 39",
+          "description": "This is image 2 for Product 39.",
+          "url": "https://picsum.photos/seed/click-shop-39-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 39",
+          "description": "This is image 3 for Product 39.",
+          "url": "https://picsum.photos/seed/click-shop-39-img-3/500/500"
+        }
+      ],
+      "price": 417.44,
+      "tags": ["modern", "versatile", "durable", "innovative", "minimalist"]
+    },
+    {
+      "id": 40,
+      "name": "Nimbus Umbrella",
+      "description": "Stay ahead with this innovative product, offering cutting-edge features and usability.",
+      "image": "https://picsum.photos/seed/click-shop-40/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 40",
+          "description": "This is image 1 for Product 40.",
+          "url": "https://picsum.photos/seed/click-shop-40-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 40",
+          "description": "This is image 2 for Product 40.",
+          "url": "https://picsum.photos/seed/click-shop-40-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 40",
+          "description": "This is image 3 for Product 40.",
+          "url": "https://picsum.photos/seed/click-shop-40-img-3/500/500"
+        }
+      ],
+      "price": 330.42,
+      "tags": ["sleek", "energy-efficient", "user-friendly", "ergonomic"]
+    },
+    {
+      "id": 41,
+      "name": "Eclipse Projector",
+      "description": "Stay ahead with this innovative product, offering cutting-edge features and usability.",
+      "image": "https://picsum.photos/seed/click-shop-41/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 41",
+          "description": "This is image 1 for Product 41.",
+          "url": "https://picsum.photos/seed/click-shop-41-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 41",
+          "description": "This is image 2 for Product 41.",
+          "url": "https://picsum.photos/seed/click-shop-41-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 41",
+          "description": "This is image 3 for Product 41.",
+          "url": "https://picsum.photos/seed/click-shop-41-img-3/500/500"
+        }
+      ],
+      "price": 454.98,
+      "tags": ["luxury", "rechargeable", "lightweight"]
+    },
+    {
+      "id": 42,
+      "name": "Echo Wireless Speaker",
+      "description": "Perfect for adventurers and everyday users, this product stands the test of time.",
+      "image": "https://picsum.photos/seed/click-shop-42/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 42",
+          "description": "This is image 1 for Product 42.",
+          "url": "https://picsum.photos/seed/click-shop-42-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 42",
+          "description": "This is image 2 for Product 42.",
+          "url": "https://picsum.photos/seed/click-shop-42-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 42",
+          "description": "This is image 3 for Product 42.",
+          "url": "https://picsum.photos/seed/click-shop-42-img-3/500/500"
+        }
+      ],
+      "price": 102.38,
+      "tags": ["energy-efficient", "durable", "luxury", "sleek", "versatile"]
+    },
+    {
+      "id": 43,
+      "name": "Stellar Wall Clock",
+      "description": "Engineered for efficiency and durability, this product is your ideal companion.",
+      "image": "https://picsum.photos/seed/click-shop-43/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 43",
+          "description": "This is image 1 for Product 43.",
+          "url": "https://picsum.photos/seed/click-shop-43-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 43",
+          "description": "This is image 2 for Product 43.",
+          "url": "https://picsum.photos/seed/click-shop-43-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 43",
+          "description": "This is image 3 for Product 43.",
+          "url": "https://picsum.photos/seed/click-shop-43-img-3/500/500"
+        }
+      ],
+      "price": 60.98,
+      "tags": ["minimalist", "waterproof", "rechargeable", "smart"]
+    },
+    {
+      "id": 44,
+      "name": "Echo Wireless Speaker",
+      "description": "An innovative product designed to bring both functionality and elegance to your daily life.",
+      "image": "https://picsum.photos/seed/click-shop-44/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 44",
+          "description": "This is image 1 for Product 44.",
+          "url": "https://picsum.photos/seed/click-shop-44-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 44",
+          "description": "This is image 2 for Product 44.",
+          "url": "https://picsum.photos/seed/click-shop-44-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 44",
+          "description": "This is image 3 for Product 44.",
+          "url": "https://picsum.photos/seed/click-shop-44-img-3/500/500"
+        }
+      ],
+      "price": 293.32,
+      "tags": ["user-friendly", "smart", "lightweight", "versatile"]
+    },
+    {
+      "id": 45,
+      "name": "Nimbus Umbrella",
+      "description": "Designed to simplify your life while adding a touch of sophistication to your space.",
+      "image": "https://picsum.photos/seed/click-shop-45/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 45",
+          "description": "This is image 1 for Product 45.",
+          "url": "https://picsum.photos/seed/click-shop-45-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 45",
+          "description": "This is image 2 for Product 45.",
+          "url": "https://picsum.photos/seed/click-shop-45-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 45",
+          "description": "This is image 3 for Product 45.",
+          "url": "https://picsum.photos/seed/click-shop-45-img-3/500/500"
+        }
+      ],
+      "price": 14.67,
+      "tags": ["rechargeable", "user-friendly"]
+    },
+    {
+      "id": 46,
+      "name": "Glacier Cooler",
+      "description": "Experience the perfect blend of style and practicality with this state-of-the-art item.",
+      "image": "https://picsum.photos/seed/click-shop-46/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 46",
+          "description": "This is image 1 for Product 46.",
+          "url": "https://picsum.photos/seed/click-shop-46-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 46",
+          "description": "This is image 2 for Product 46.",
+          "url": "https://picsum.photos/seed/click-shop-46-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 46",
+          "description": "This is image 3 for Product 46.",
+          "url": "https://picsum.photos/seed/click-shop-46-img-3/500/500"
+        }
+      ],
+      "price": 240.18,
+      "tags": ["lightweight", "innovative", "affordable", "compact"]
+    },
+    {
+      "id": 47,
+      "name": "Echo Wireless Speaker",
+      "description": "Engineered for efficiency and durability, this product is your ideal companion.",
+      "image": "https://picsum.photos/seed/click-shop-47/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 47",
+          "description": "This is image 1 for Product 47.",
+          "url": "https://picsum.photos/seed/click-shop-47-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 47",
+          "description": "This is image 2 for Product 47.",
+          "url": "https://picsum.photos/seed/click-shop-47-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 47",
+          "description": "This is image 3 for Product 47.",
+          "url": "https://picsum.photos/seed/click-shop-47-img-3/500/500"
+        }
+      ],
+      "price": 123.63,
+      "tags": ["waterproof", "energy-efficient"]
+    },
+    {
+      "id": 48,
+      "name": "Aurora Lamp",
+      "description": "Perfect for adventurers and everyday users, this product stands the test of time.",
+      "image": "https://picsum.photos/seed/click-shop-48/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 48",
+          "description": "This is image 1 for Product 48.",
+          "url": "https://picsum.photos/seed/click-shop-48-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 48",
+          "description": "This is image 2 for Product 48.",
+          "url": "https://picsum.photos/seed/click-shop-48-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 48",
+          "description": "This is image 3 for Product 48.",
+          "url": "https://picsum.photos/seed/click-shop-48-img-3/500/500"
+        }
+      ],
+      "price": 52.13,
+      "tags": ["user-friendly", "affordable", "premium", "innovative", "ergonomic"]
+    },
+    {
+      "id": 49,
+      "name": "Cascade Water Bottle",
+      "description": "Experience the perfect blend of style and practicality with this state-of-the-art item.",
+      "image": "https://picsum.photos/seed/click-shop-49/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 49",
+          "description": "This is image 1 for Product 49.",
+          "url": "https://picsum.photos/seed/click-shop-49-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 49",
+          "description": "This is image 2 for Product 49.",
+          "url": "https://picsum.photos/seed/click-shop-49-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 49",
+          "description": "This is image 3 for Product 49.",
+          "url": "https://picsum.photos/seed/click-shop-49-img-3/500/500"
+        }
+      ],
+      "price": 344.52,
+      "tags": ["affordable", "compact", "modern"]
+    },
+    {
+      "id": 50,
+      "name": "Cascade Water Bottle",
+      "description": "Experience the perfect blend of style and practicality with this state-of-the-art item.",
+      "image": "https://picsum.photos/seed/click-shop-50/500/500",
+      "images": [
+        {
+          "title": "Image 1 for Product 50",
+          "description": "This is image 1 for Product 50.",
+          "url": "https://picsum.photos/seed/click-shop-50-img-1/500/500"
+        },
+        {
+          "title": "Image 2 for Product 50",
+          "description": "This is image 2 for Product 50.",
+          "url": "https://picsum.photos/seed/click-shop-50-img-2/500/500"
+        },
+        {
+          "title": "Image 3 for Product 50",
+          "description": "This is image 3 for Product 50.",
+          "url": "https://picsum.photos/seed/click-shop-50-img-3/500/500"
+        }
+      ],
+      "price": 136.57,
+      "tags": ["rechargeable", "minimalist", "lightweight", "durable"]
+    }
+  ]
 }
