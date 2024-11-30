@@ -25,7 +25,7 @@ async function getWebCrypto(): Promise<Crypto> {
  */
 export async function hashPassword(password: string): Promise<string> {
   const crypto = await getWebCrypto();
-  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const salt = crypto.getRandomValues(new Uint8Array(16)).buffer;
   const encoder = new TextEncoder();
   const data = encoder.encode(password + bufferToHex(salt));
   const hash = await crypto.subtle.digest('SHA-256', data);
