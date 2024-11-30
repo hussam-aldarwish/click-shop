@@ -14,7 +14,7 @@
     "dev": "run-p dev:*",
     "build": "next build",
     "start": "next start",
-    "start:server": "json-server db.json"
+    "start:server": "json-server db.json --port 5000"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
