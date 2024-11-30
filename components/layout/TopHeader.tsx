@@ -12,7 +12,7 @@ const TopHeader = () => {
           <SocialMediaIcon href='https://instagram.com' icon={FaInstagram} />
           <SocialMediaIcon href='https://linkedin.com' icon={FaLinkedin} />
         </div>
-        <div className='mt-auto flex justify-center items-center gap-2'>
+        <div className='mt-auto flex justify-center items-center gap-1'>
           Toggle Theme:
           <ThemeToggleButton />
         </div>
