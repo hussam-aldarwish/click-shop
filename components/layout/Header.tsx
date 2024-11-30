@@ -9,8 +9,8 @@ import { BiLogInCircle, BiSearch } from 'react-icons/bi';
 import { FaBars } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa6';
 import { ActiveLink, Logo } from '../common';
+import SearchForm from '../forms/SearchForm';
 import MobileOffcanvasMenu from './MobileOffcanvasMenu';
-import SearchForm from './SearchForm';
 
 const Header = () => {
   const { data: session } = useSession();

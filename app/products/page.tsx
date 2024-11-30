@@ -3,13 +3,21 @@ import { API_URL } from '@/helpers/env';
 import { fetchData } from '@/helpers/fetch';
 import { Product } from '@/types/custom-types';
 import { Metadata } from 'next';
+import { FC } from 'react';
 
 export const metadata: Metadata = {
   title: 'Products',
 };
 
-const ProductsPage = async () => {
-  const products = await fetchProducts();
+interface ProductsPageProps {
+  searchParams: Promise<{
+    q?: string;
+  }>;
+}
+
+const ProductsPage: FC<ProductsPageProps> = async ({ searchParams }) => {
+  const { q } = await searchParams;
+  const products = await fetchProducts(q);
 
   if (products.length)
     return (
@@ -25,9 +33,9 @@ const ProductsPage = async () => {
   );
 };
 
-async function fetchProducts() {
+async function fetchProducts(q?: string) {
   try {
-    const res = await fetchData<Product[]>(`${API_URL}/products`);
+    const res = await fetchData<Product[]>(`${API_URL}/products${q ? `?name_like=${q}` : ''}`);
     return res;
   } catch {
     return [];
