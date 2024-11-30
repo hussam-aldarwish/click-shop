@@ -1,6 +1,7 @@
 'use client';
 
 import menus from '@/config/menus.json';
+import useSticky from '@/hooks/useSticky';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
@@ -8,6 +9,7 @@ import { useState } from 'react';
 import { BiLogInCircle, BiSearch } from 'react-icons/bi';
 import { FaBars } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa6';
+import { twMerge } from 'tailwind-merge';
 import { ActiveLink, Logo } from '../common';
 import SearchForm from '../forms/SearchForm';
 import ShoppingCartList from '../shopping-cart/ShoppingCartList';
@@ -17,6 +19,7 @@ const Header = () => {
   const { data: session } = useSession();
   const [searchFormIsOpen, setSearchFormIsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const sticky = useSticky();
 
   return (
     <>
@@ -27,7 +30,7 @@ const Header = () => {
       <MobileOffcanvasMenu isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
 
       {/* Header */}
-      <header className='bg-primary'>
+      <header className={twMerge('bg-primary', sticky && 'sticky top-0 z-30 shadow-md')}>
         <div className='container'>
           <div className='flex'>
             {/* Logo */}

@@ -5,7 +5,7 @@ import { useSession } from 'next-auth/react';
 import { FC } from 'react';
 import { BiX } from 'react-icons/bi';
 import { twMerge } from 'tailwind-merge';
-import { ActiveLink } from '../common';
+import { ActiveLink, Logo } from '../common';
 import ThemeToggleButton from '../common/ThemeToggleButton';
 
 interface MobileOffcanvasMenuProps {
@@ -30,9 +30,15 @@ const MobileOffcanvasMenu: FC<MobileOffcanvasMenuProps> = ({ isOpen, onClose }) 
           !isOpen ? '-translate-x-full' : 'translate-x-0',
         )}
       >
-        <button onClick={() => onClose()} className='mb-4'>
-          <BiX size={24} />
-        </button>
+        <div className='flex items-center justify-between'>
+          <div className='flex items-center gap-1'>
+            <Logo />
+            <h3>Click Shop</h3>
+          </div>
+          <button onClick={() => onClose()} className='my-auto'>
+            <BiX size={24} />
+          </button>
+        </div>
         <nav>
           {menus['main-nav-menu'].map((menu, index) => (
             <ActiveLink
