@@ -10,11 +10,11 @@
     "lint-fix:prettier": "prettier --write .",
     "lint-fix": "run-s lint-fix:*",
     "dev:client": "next dev --turbopack",
-    "dev:server": "json-server db.json --port 5000",
+    "dev:server": "json-server --watch db.json --port 5000",
     "dev": "run-p dev:*",
     "build": "next build",
     "start": "next start",
-    "start:server": "json-server db.json --port 5000"
+    "start:server": "json-server db.json --port $PORT"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
