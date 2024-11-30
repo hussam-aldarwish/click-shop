@@ -13,7 +13,7 @@ const ShoppingCartList = () => {
       <div>
         <MenuButton className='text-light flex items-center space-x-2'>
           <FaShoppingBag size={32} className='p-1 bg-secondary rounded-full' />
-          <span className='text-dark'>{totalCount}</span>
+          <span className='text-light'>{totalCount}</span>
         </MenuButton>
       </div>
       <MenuItems

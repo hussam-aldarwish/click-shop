@@ -1,3 +1,4 @@
+import ProfileDetails from '@/components/profile/ProfileDetails';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const ProfilePage = () => {
-  return <div>ProfilePage</div>;
+  return <ProfileDetails />;
 };
 
 export default ProfilePage;

@@ -60,7 +60,7 @@ const Header = () => {
             </button>
 
             {/* Shopping Cart */}
-            <div className='my-auto hidden md:block'>
+            <div className='my-auto'>
               <ShoppingCartList />
             </div>
 
