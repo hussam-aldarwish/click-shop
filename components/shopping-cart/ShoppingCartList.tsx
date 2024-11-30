@@ -48,15 +48,27 @@ const ShoppingCartList = () => {
                     href='/shopping-cart'
                     className='bg-accent text-dark px-4 py-2 rounded-lg w-full hover:bg-accent/80'
                   >
-                    Checkout
+                    Go to Cart
                   </Link>
                 </div>
               </MenuItem>
             </>
           ) : (
-            <MenuItem>
-              <div className='px-4 py-2 text-center'>No items in cart</div>
-            </MenuItem>
+            <>
+              <MenuItem>
+                <div className='px-4 py-2 text-center'>No items in cart</div>
+              </MenuItem>
+              <MenuItem>
+                <div className='px-4 py-2 text-center flex'>
+                  <Link
+                    href='/shopping-cart'
+                    className='bg-accent text-dark px-4 py-2 rounded-lg w-full hover:bg-accent/80'
+                  >
+                    Go to Cart
+                  </Link>
+                </div>
+              </MenuItem>
+            </>
           )}
         </div>
       </MenuItems>
