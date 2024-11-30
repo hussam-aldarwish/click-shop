@@ -10,16 +10,16 @@
     "lint-fix:prettier": "prettier --write .",
     "lint-fix": "run-s lint-fix:*",
     "dev:client": "next dev --turbopack",
-    "dev:server": "json-server --watch db.json --port 5000",
+    "dev:server": "json-server db.json --port 5000",
     "dev": "run-p dev:*",
     "build": "next build",
     "start": "next start",
-    "start:server": "json-server db.json --port $PORT"
+    "start:server": "json-server db.json"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@hookform/resolvers": "^3.9.1",
-    "json-server": "0.17.0",
+    "json-server": "1.0.0-beta.3",
     "next": "^15.0.3",
     "next-auth": "5.0.0-beta.25",
     "react": "^18.3.1",
