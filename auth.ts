@@ -31,10 +31,15 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     signIn: '/auth/login',
   },
   callbacks: {
-    async jwt({ token }) {
+    jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+      }
       return token;
     },
-    async session({ session }) {
+    async session({ session, token }) {
+      const user = await userService.getUsers({ email: token.email as string });
+      session.user.id = user[0].id as string;
       return session;
     },
     // Protect the /user route

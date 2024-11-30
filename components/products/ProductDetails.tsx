@@ -1,5 +1,6 @@
 'use client';
 
+import useShoppingCart from '@/hooks/useShoppingCart';
 import { Product } from '@/types/custom-types';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -14,6 +15,7 @@ interface ProductDetailsProps {
 
 const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
   const router = useRouter();
+  const { addToCart } = useShoppingCart();
 
   return (
     <div className='container mx-auto px-4 py-12'>
@@ -61,6 +63,14 @@ const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
             {/* Add to Cart Button */}
             <button
               title='Add to Cart'
+              onClick={() =>
+                addToCart({
+                  id: product.id.toString(),
+                  name: product.name,
+                  price: product.price,
+                  count: 1,
+                })
+              }
               className='flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary shadow-xl transition-all'
             >
               <FaShoppingCart />

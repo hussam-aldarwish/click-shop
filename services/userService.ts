@@ -9,12 +9,10 @@ interface User extends NextAuthUser {
 }
 
 class UserService {
-  // Construct the full URL for a given endpoint
-  private getUrl = (endpoint: string) => `${API_URL}/${endpoint}`;
+  private endpoint = `${API_URL}/users`;
 
-  getUsers = async (params: { email?: string }) => {
-    const { email } = params;
-    return fetchData<User[]>(this.getUrl(`users${email ? `?email=${email}` : ''}`));
+  getUsers = async ({ email }: { email?: string }) => {
+    return fetchData<User[]>(email ? `${this.endpoint}?email=${email}` : this.endpoint);
   };
 
   createUser = async ({
@@ -27,17 +25,15 @@ class UserService {
     password: string;
   }) => {
     // Generate a unique ID for the user
-    const id = Math.random().toString(36).substring(2) + Date.now().toString(36);
     const hashedPassword = await hashPassword(password);
     const user = {
-      id,
       name: fullName,
       email,
       password: hashedPassword,
     };
 
     try {
-      await fetchData(this.getUrl('users'), {
+      await fetchData(this.endpoint, {
         method: 'POST',
         body: JSON.stringify(user),
       });

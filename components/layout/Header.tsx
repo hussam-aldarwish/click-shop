@@ -10,6 +10,7 @@ import { FaBars } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa6';
 import { ActiveLink, Logo } from '../common';
 import SearchForm from '../forms/SearchForm';
+import ShoppingCartList from '../shopping-cart/ShoppingCartList';
 import MobileOffcanvasMenu from './MobileOffcanvasMenu';
 
 const Header = () => {
@@ -56,8 +57,12 @@ const Header = () => {
               className='ml-auto flex items-center space-x-2 text-white hover:text-gray-200 focus:outline-none'
             >
               <BiSearch size={24} />
-              <span>Search</span>
             </button>
+
+            {/* Shopping Cart */}
+            <div className='my-auto hidden md:block'>
+              <ShoppingCartList />
+            </div>
 
             {/* User Dropdown or Login */}
             <div className='my-auto hidden md:block'>

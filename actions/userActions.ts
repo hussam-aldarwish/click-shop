@@ -4,7 +4,7 @@ import { signIn } from '@/auth';
 import userService from '@/services/userService';
 import { revalidatePath } from 'next/cache';
 
-export const signUp = async ({
+export const signUpAction = async ({
   fullName,
   email,
   password,
@@ -31,7 +31,7 @@ export const signUp = async ({
   };
 };
 
-export const checkEmailAvailability = async (email: string) => {
+export const checkEmailAvailabilityAction = async (email: string) => {
   const users = await userService.getUsers({ email });
 
   return !users.length;

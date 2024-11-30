@@ -1,6 +1,6 @@
 'use client';
 
-import { signUp } from '@/actions/userActions';
+import { signUpAction } from '@/actions/userActions';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
@@ -24,7 +24,7 @@ const SignUpForm = () => {
 
   const onSubmit = handleSubmit((data) => {
     try {
-      signUp(data);
+      signUpAction(data);
       Swal.fire({
         icon: 'success',
         title: 'Success!',

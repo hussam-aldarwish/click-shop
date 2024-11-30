@@ -1,8 +1,11 @@
+'use client';
+
+import useShoppingCart from '@/hooks/useShoppingCart';
 import { Product } from '@/types/custom-types';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FaHeart, FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart } from 'react-icons/fa';
 import { FaBookOpenReader } from 'react-icons/fa6';
 
 type ProductCardProps = {
@@ -12,6 +15,7 @@ type ProductCardProps = {
 const ProductCard: React.FC<ProductCardProps> = ({
   product: { id, name, description, image, price, tags },
 }) => {
+  const { addToCart } = useShoppingCart();
   return (
     <div className='relative bg-light rounded-2xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:scale-105'>
       {/* Image Section */}
@@ -30,14 +34,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <div className='absolute bottom-3 left-3 bg-primary text-white text-sm font-bold px-3 py-1 rounded-md shadow-lg'>
           ${price.toFixed(2)}
         </div>
-
-        {/* Wishlist Button */}
-        <button
-          title='Add to Wishlist'
-          className='absolute top-3 right-3 bg-white text-primary p-2 rounded-full shadow-lg hover:bg-primary hover:text-white transition-all'
-        >
-          <FaHeart />
-        </button>
       </div>
 
       {/* Content Section */}
@@ -71,6 +67,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </Link>
           <button
             title='Add to Cart'
+            onClick={() =>
+              addToCart({
+                id: id.toString(),
+                name,
+                price,
+                count: 1,
+              })
+            } // Add product to cart
             className='flex items-center gap-2 bg-primary dark:bg-background text-white px-4 py-2 rounded-lg hover:bg-secondary shadow-lg transition-all'
           >
             <FaShoppingCart />

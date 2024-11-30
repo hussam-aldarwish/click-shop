@@ -1,4 +1,4 @@
-import { checkEmailAvailability } from '@/actions/userActions';
+import { checkEmailAvailabilityAction } from '@/actions/userActions';
 import { z } from 'zod';
 
 const signUpFormSchema = z
@@ -12,7 +12,7 @@ const signUpFormSchema = z
     message: 'Passwords do not match',
     path: ['confirmPassword'],
   })
-  .refine(async (data) => checkEmailAvailability(data.email), {
+  .refine(async (data) => checkEmailAvailabilityAction(data.email), {
     message:
       'There is already an account with this email address <br/>Please sign in <a href="/auth/login" class="text-primary">here</a>',
     path: ['email'],
