@@ -34,7 +34,7 @@ body {
   @apply bg-background font-roboto text-base leading-7 text-foreground antialiased;
   @apply flex min-h-screen flex-col;
   main {
-    @apply relative flex-1;
+    @apply relative flex flex-1 flex-col;
   }
 }
 

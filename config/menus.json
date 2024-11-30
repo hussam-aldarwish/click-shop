@@ -8,6 +8,10 @@
     {
       "label": "Products",
       "href": "/products"
+    },
+    {
+      "label": "Sign Up",
+      "href": "/auth/signup"
     }
   ],
   "footer-nav-menu": [

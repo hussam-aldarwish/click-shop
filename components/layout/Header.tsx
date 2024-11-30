@@ -1,6 +1,7 @@
 'use client';
 
 import menus from '@/config/menus.json';
+import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
@@ -8,6 +9,7 @@ import { ActiveLink, Logo } from '../common';
 import SearchForm from './SearchForm';
 
 const Header = () => {
+  const { data: session } = useSession();
   const [searchFormIsOpen, setSearchFormIsOpen] = useState(false);
 
   return (
@@ -45,6 +47,19 @@ const Header = () => {
               <FaSearch size={20} />
               <span>Search</span>
             </button>
+
+            {/* User */}
+            <div className='ml-4 flex items-center space-x-4'>
+              {session ? (
+                <Link href='/user' className='text-white hover:text-gray-200'>
+                  Profile
+                </Link>
+              ) : (
+                <Link href='/auth/login' className='text-white hover:text-gray-200'>
+                  Login
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </header>

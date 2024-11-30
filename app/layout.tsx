@@ -1,4 +1,5 @@
 import { Footer, Header, TopHeader } from '@/components/layout';
+import Providers from '@/components/layout/Providers';
 import type { Metadata } from 'next';
 import { Lora, Poppins, Roboto } from 'next/font/google';
 import './globals.css';
@@ -46,10 +47,12 @@ export default function RootLayout({
       <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
       <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
       <body className={`${roboto.variable} ${lora.variable} ${poppins.variable}`}>
-        <TopHeader />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <TopHeader />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

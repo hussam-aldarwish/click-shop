@@ -1,10 +1,15 @@
 import type { NextConfig } from 'next';
-import { API_URL } from './herlpers/env';
+import { API_URL } from './helpers/env';
 
 const nextConfig: NextConfig = {
   async rewrites() {
     return [
-      // Proxy not found API routes to the API (JSON-SERVER)
+      // Exclude /api/auth/:path* from rewriting
+      {
+        source: '/api/auth/:path*',
+        destination: '/api/auth/:path*', // Leave this as-is, no rewrite
+      },
+      // Rewrite all other API routes
       {
         source: '/api/:path*',
         destination: `${API_URL}/:path*`,
