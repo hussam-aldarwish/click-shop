@@ -8,10 +8,6 @@
     {
       "label": "Products",
       "href": "/products"
-    },
-    {
-      "label": "Sign Up",
-      "href": "/auth/signup"
     }
   ],
   "footer-nav-menu": [
@@ -22,6 +18,16 @@
     {
       "label": "Terms of Service",
       "href": "/terms"
+    }
+  ],
+  "user-nav-menu": [
+    {
+      "label": "Profile",
+      "href": "/profile"
+    },
+    {
+      "label": "Sign Out",
+      "href": "/auth/signout"
     }
   ]
 }

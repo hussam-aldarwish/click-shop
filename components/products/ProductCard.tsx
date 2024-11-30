@@ -60,20 +60,21 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
 
         {/* Action Buttons */}
-        <div className='mt-6 flex justify-between items-center'>
+        <div className='mt-6 flex justify-between items-center flex-wrap gap-2'>
+          <Link
+            href={`/products/${id}`}
+            title='View Details'
+            className='flex items-center gap-2 text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white shadow-lg transition-all'
+          >
+            <FaBookOpenReader />
+            <span>Details</span>
+          </Link>
           <button
             title='Add to Cart'
             className='flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary shadow-lg transition-all'
           >
             <FaShoppingCart />
             <span>Add to Cart</span>
-          </button>
-          <button
-            title='View Details'
-            className='flex items-center gap-2 text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white shadow-lg transition-all'
-          >
-            <FaBookOpenReader />
-            <span>Details</span>
           </button>
         </div>
       </div>

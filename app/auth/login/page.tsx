@@ -20,6 +20,12 @@ const LoginPage: FC<LoginPageProps> = async ({ searchParams }) => {
     <>
       <h1 className='text-4xl font-bold mb-8 text-center'>Login</h1>
       <LoginForm {...{ error, code, callbackUrl }} />
+      <p className='text-center mt-4'>
+        Don&apos;t have an account?{' '}
+        <a href='/auth/signup' className='text-blue-500'>
+          Sign up
+        </a>
+      </p>
     </>
   );
 };
