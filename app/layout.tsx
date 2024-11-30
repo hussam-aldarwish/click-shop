@@ -1,5 +1,5 @@
 import { Footer, Header, TopHeader } from '@/components/layout';
-import Providers from '@/components/layout/Providers';
+import Providers from '@/components/Providers';
 import type { Metadata } from 'next';
 import { Lora, Poppins, Roboto } from 'next/font/google';
 import './globals.css';

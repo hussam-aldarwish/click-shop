@@ -64,14 +64,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <Link
             href={`/products/${id}`}
             title='View Details'
-            className='flex items-center gap-2 text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white shadow-lg transition-all'
+            className='flex items-center gap-2 text-primary dark:text-dark border dark:border-dark px-4 py-2 rounded-lg hover:bg-primary hover:text-white shadow-lg transition-all'
           >
             <FaBookOpenReader />
             <span>Details</span>
           </Link>
           <button
             title='Add to Cart'
-            className='flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary shadow-lg transition-all'
+            className='flex items-center gap-2 bg-primary dark:bg-background text-white px-4 py-2 rounded-lg hover:bg-secondary shadow-lg transition-all'
           >
             <FaShoppingCart />
             <span>Add to Cart</span>

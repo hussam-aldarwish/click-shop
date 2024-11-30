@@ -43,7 +43,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
         <div className='flex flex-col justify-between'>
           <div>
             <h1 className='text-4xl font-extrabold text-primary mb-4'>{product.name}</h1>
-            <p className='text-lg text-gray-600 mb-6'>{product.description}</p>
+            <p className='text-lg mb-6'>{product.description}</p>
             <div className='flex items-center gap-4 mb-6'>
               <span className='text-2xl font-bold text-primary'>${product.price.toFixed(2)}</span>
               <div className='flex flex-wrap gap-2'>
@@ -70,7 +70,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
 
           {/* Product Image Gallery */}
           <div className='mt-8'>
-            <h3 className='text-xl font-bold text-dark mb-4'>Product Gallery</h3>
+            <h3 className='text-xl font-bold mb-4'>Product Gallery</h3>
             <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
               {product.images.map((img, index) => (
                 <div

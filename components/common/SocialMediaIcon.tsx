@@ -33,7 +33,7 @@ const SocialMediaIcon: FC<SocialMediaIconProps> = ({
       target='_blank'
       rel='noopener noreferrer'
       className={twMerge(
-        'transform rounded-full p-1 shadow-md transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg',
+        'transform rounded-full p-1 shadow-md transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg my-auto',
         hoverColorClass,
         className,
       )}
