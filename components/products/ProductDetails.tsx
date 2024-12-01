@@ -29,6 +29,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ id }) => {
 
   if (isLoading) return <p className='text-center text-lg'>Loading...</p>;
   if (error) return <p className='text-center text-lg text-red-500'>{error.message}</p>;
+
   if (!product) notFound();
 
   return (

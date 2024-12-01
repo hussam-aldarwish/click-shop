@@ -21,6 +21,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ q }) => {
           PaginatedResponse<Product>
         >,
       getNextPageParam: (lastPage) => lastPage.next,
+      retry: true,
     });
 
   const observerRef = useRef<IntersectionObserver>();

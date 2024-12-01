@@ -29,6 +29,7 @@ const ProductsPage: FC<ProductsPageProps> = async ({ searchParams }) => {
       getProductsAction({ name: q, page: pageParam as number }) as Promise<
         PaginatedResponse<Product>
       >,
+    retry: 0,
   });
 
   const dehydratedState = dehydrate(queryClient);
