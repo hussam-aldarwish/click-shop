@@ -5,7 +5,7 @@ export const fetchData = async <T = any>(url: string, options: RequestInit = {})
   const { signal } = controller;
 
   // Timeout handling
-  setTimeout(() => {
+  const timeoutId = setTimeout(() => {
     controller.abort();
   }, 3000);
 
@@ -14,6 +14,8 @@ export const fetchData = async <T = any>(url: string, options: RequestInit = {})
     signal,
     ...options,
   });
+
+  clearTimeout(timeoutId);
 
   // Error handling for failed fetch
   if (!response.ok) {
