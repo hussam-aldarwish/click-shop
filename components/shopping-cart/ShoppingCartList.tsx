@@ -11,9 +11,9 @@ const ShoppingCartList = () => {
   return (
     <Menu as='div' className='relative ml-4'>
       <div>
-        <MenuButton className='text-light flex items-center space-x-2'>
-          <FaShoppingBag size={32} className='p-1 bg-secondary rounded-full' />
-          <span className='text-light'>{totalCount}</span>
+        <MenuButton className='flex items-center space-x-2'>
+          <FaShoppingBag size={32} className='p-1 bg-secondary !text-white rounded-full' />
+          <span>{totalCount}</span>
         </MenuButton>
       </div>
       <MenuItems
