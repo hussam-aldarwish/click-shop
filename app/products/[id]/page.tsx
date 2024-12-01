@@ -1,8 +1,7 @@
+import { getProductAction } from '@/actions/productActions';
 import ProductDetails from '@/components/products/ProductDetails';
-import { API_URL } from '@/helpers/env';
-import { fetchData } from '@/helpers/fetch';
-import { Product } from '@/types/custom-types';
-import { notFound } from 'next/navigation';
+import getQueryClient from '@/lib/getQueryClient';
+import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
 import { FC } from 'react';
 
 interface PageProps {
@@ -14,25 +13,20 @@ const ProductDetailsPage: FC<PageProps> = async ({ params }) => {
   // In nextjs 15, has become a promise and needs to be awaited
   const { id } = await params;
 
-  // Fetch the product details using the ID
-  const product = await fetchProductById(id);
+  const queryClient = getQueryClient();
 
-  if (!product) {
-    // If product not found, show 404 page
-    notFound();
-  }
+  await queryClient.prefetchQuery({
+    queryKey: ['products', id],
+    queryFn: () => getProductAction(id),
+  });
 
-  return <ProductDetails product={product} />;
+  const dehydratedState = dehydrate(queryClient);
+
+  return (
+    <HydrationBoundary state={dehydratedState}>
+      <ProductDetails id={id} />
+    </HydrationBoundary>
+  );
 };
-
-// Function to fetch the product by ID
-async function fetchProductById(id: string) {
-  try {
-    const res = await fetchData<Product>(`${API_URL}/products/${id}`);
-    return res;
-  } catch {
-    return null;
-  }
-}
 
 export default ProductDetailsPage;

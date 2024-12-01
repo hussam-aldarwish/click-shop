@@ -1,21 +1,35 @@
 'use client';
 
+import { getProductAction } from '@/actions/productActions';
 import useShoppingCart from '@/hooks/useShoppingCart';
-import { Product } from '@/types/custom-types';
+import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { notFound, useRouter } from 'next/navigation';
 import { FC } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 interface ProductDetailsProps {
-  product: Product;
+  id: string;
 }
 
-const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
+const ProductDetails: FC<ProductDetailsProps> = ({ id }) => {
   const router = useRouter();
   const { addToCart } = useShoppingCart();
+
+  const {
+    data: product,
+    isLoading,
+    error,
+  } = useQuery({
+    queryKey: ['products', id],
+    queryFn: () => getProductAction(id),
+  });
+
+  if (isLoading) return <p className='text-center text-lg'>Loading...</p>;
+  if (error) return <p className='text-center text-lg text-red-500'>{error.message}</p>;
+  if (!product) notFound();
 
   return (
     <div className='container mx-auto px-4 py-12'>

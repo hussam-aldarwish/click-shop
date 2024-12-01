@@ -1,7 +1,8 @@
+import { getProductsAction } from '@/actions/productActions';
 import ProductGrid from '@/components/products/ProductGrid';
-import { API_URL } from '@/helpers/env';
-import { fetchData } from '@/helpers/fetch';
-import { Product } from '@/types/custom-types';
+import getQueryClient from '@/lib/getQueryClient';
+import { PaginatedResponse, Product } from '@/types/custom-types';
+import { HydrationBoundary, dehydrate } from '@tanstack/react-query';
 import { Metadata } from 'next';
 import { FC } from 'react';
 
@@ -19,35 +20,26 @@ const ProductsPage: FC<ProductsPageProps> = async ({ searchParams }) => {
   // Extract the search query parameter
   const { q } = await searchParams;
 
-  // Fetch products based on the search query
-  const products = await fetchProducts(q);
+  const queryClient = getQueryClient();
 
-  // Render the product grid if products are found
-  if (products.length)
-    return (
-      <div className='container space-y-4 text-center py-12'>
-        <ProductGrid products={products} />
-      </div>
-    );
+  await queryClient.prefetchInfiniteQuery({
+    initialPageParam: 1,
+    queryKey: ['products', { q }],
+    queryFn: ({ pageParam }) =>
+      getProductsAction({ name: q, page: pageParam as number }) as Promise<
+        PaginatedResponse<Product>
+      >,
+  });
 
-  // Render a fallback message if no products are found
+  const dehydratedState = dehydrate(queryClient);
+
   return (
     <div className='container space-y-4 text-center py-12'>
-      <h1 className='text-3xl font-bold'>No products found</h1>
+      <HydrationBoundary state={dehydratedState}>
+        <ProductGrid q={q} />
+      </HydrationBoundary>
     </div>
   );
 };
-
-// Helper function to fetch products from the API
-async function fetchProducts(q?: string) {
-  try {
-    // Fetch products with an optional search query
-    const res = await fetchData<Product[]>(`${API_URL}/products${q ? `?name_like=${q}` : ''}`);
-    return res;
-  } catch {
-    // Return an empty array if the fetch fails
-    return [];
-  }
-}
 
 export default ProductsPage;
