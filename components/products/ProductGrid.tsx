@@ -45,7 +45,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ q }) => {
         Discover Our Exclusive Products
       </h1>
       {isLoading && <p className='text-center text-lg'>Loading...</p>}
-      {error && <p className='text-center text-lg text-red-500'>{error.message}</p>}
+      {error && <p className='text-center text-lg text-red-500 mb-4'>{error.message}</p>}
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
         {data?.pages.map((page, i) => (
           <React.Fragment key={i}>
