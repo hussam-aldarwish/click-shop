@@ -16,6 +16,7 @@ This project was built as part of a frontend development task while applying for
 ### Product Listing:
 
 - **Product Grid**: Displays a dynamic, responsive grid of products fetched from the mock API.
+- **Infinite Scrolling**: Powered by React Query, allowing seamless product loading as the user scrolls.
 - **Product Details**: Provides detailed information for each product.
 
 ### Shopping Cart:
@@ -23,6 +24,8 @@ This project was built as part of a frontend development task while applying for
 - Add products to the cart, view details, and manage quantities.
 
 ## Technical Stack
+
+- **Data Fetching**: React Query for efficient state and server synchronization
 
 - **Framework**: [Next.js](https://nextjs.org/) with TypeScript
 - **Styling**: Tailwind CSS
@@ -55,6 +58,7 @@ I have chosen `pnpm` as the package manager for this project due to its efficien
   ├── forms           # Form components (e.g., LoginForm, SignUpForm)
   ├── layout          # Layout components (e.g., Header, Footer)
   ├── products        # Product-related components (e.g., ProductCard, ProductGrid)
+  |-- providers       # Centralized context and state management providers for the application
   ├── shopping-cart   # Shopping cart components (e.g., ShoppingCartList)
 
 /hooks
