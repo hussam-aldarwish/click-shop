@@ -6,8 +6,6 @@ This project was built as part of a frontend development task while applying for
 
 👉 **[Live Demo 🚀](https://click-shop-sigma.vercel.app/)**
 
----
-
 ## Features ✨
 
 ### 🔒 Authentication:
@@ -25,8 +23,6 @@ This project was built as part of a frontend development task while applying for
 
 - Add products to the cart, view details, and manage quantities.
 
----
-
 ## ⚙️ Technical Stack
 
 - **Data Fetching**: React Query for efficient state and server synchronization
@@ -36,8 +32,6 @@ This project was built as part of a frontend development task while applying for
 - **State Management**: React Context API and custom hooks
 - **Mock API**: JSON-SERVER
 
----
-
 ## 📦 Package Manager Preference: pnpm
 
 I have chosen `pnpm` as the package manager for this project due to its efficiency and performance advantages:
@@ -45,8 +39,6 @@ I have chosen `pnpm` as the package manager for this project due to its efficien
 - 🚀 Faster installations compared to npm and yarn.
 - 💾 Disk space savings through content-addressable storage, avoiding redundant copies of packages.
 - 🔒 Strict dependency management ensures a consistent and predictable dependency tree.
-
----
 
 ## 📂 Project Structure
 
@@ -117,9 +109,9 @@ I have chosen `pnpm` as the package manager for this project due to its efficien
    ```
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## 📐Architectural Highlights
+## 📐 Architectural Highlights
 
-### 🔑Authentication Flow
+### 🔑 Authentication Flow
 
 - A modular approach is used for authentication forms, with validation schemas for input validation.
 
