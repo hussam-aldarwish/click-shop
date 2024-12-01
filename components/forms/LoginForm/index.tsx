@@ -53,7 +53,7 @@ const LoginForm: FC<LoginFormProps> = ({ code, error, callbackUrl = '/' }) => {
           type='submit'
           className='w-full p-3 bg-primary text-light dark:text-dark rounded-md font-semibold'
         >
-          Sign Up
+          Login
         </button>
       </div>
     </form>
