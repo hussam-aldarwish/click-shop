@@ -4,6 +4,7 @@ import { getProductsAction } from '@/actions/productActions';
 import { PaginatedResponse, Product } from '@/types/custom-types';
 import { useInfiniteQuery } from '@tanstack/react-query';
 import React, { useEffect, useRef } from 'react';
+import { FaSpinner } from 'react-icons/fa6';
 import ProductCard from './ProductCard';
 
 type ProductGridProps = {
@@ -53,6 +54,12 @@ const ProductGrid: React.FC<ProductGridProps> = ({ q }) => {
             ))}
           </React.Fragment>
         ))}
+        {isFetchingNextPage && (
+          <div className='bg-light text-dark text-center py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 min-h-40'>
+            <FaSpinner className='animate-spin' />
+            Loading more products...
+          </div>
+        )}
         <div ref={lastElementRef} />
       </div>
     </div>
