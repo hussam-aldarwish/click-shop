@@ -6,7 +6,9 @@ import { FC, PropsWithChildren, useEffect, useState } from 'react';
 
 const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const [theme, setTheme] = useState<Theme>('system');
+  const [theme, setTheme] = useState<Theme>(
+    () => (localStorage.getItem('theme') as Theme) || 'system',
+  );
 
   const toggleTheme = () => {
     setTheme((prevTheme) => {
@@ -16,29 +18,9 @@ const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
     });
   };
 
-  // Load the saved theme from localStorage on the first render
   useEffect(() => {
-    try {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        setTheme(savedTheme as Theme);
-      }
-    } catch (error) {
-      console.error('Error loading theme from localStorage:', error);
-    }
-  }, []);
+    localStorage.setItem('theme', theme);
 
-  // Save the current theme to localStorage whenever it changes
-  useEffect(() => {
-    try {
-      localStorage.setItem('theme', theme);
-    } catch (error) {
-      console.error('Error saving theme to localStorage:', error);
-    }
-  }, [theme]);
-
-  // Apply the appropriate class to the document body based on the theme
-  useEffect(() => {
     const isDarkTheme = theme === 'dark' || (theme === 'system' && prefersDarkMode);
     document.documentElement.classList.toggle('dark', isDarkTheme);
   }, [theme, prefersDarkMode]);
